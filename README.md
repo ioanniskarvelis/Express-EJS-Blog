@@ -1,5 +1,16 @@
 # Express + EJS Blog (SQLite)
 
+[![License: MIT](https://img.shields.io/github/license/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](https://github.com/ioanniskarvelis/Express-EJS-Blog/stargazers)
+[![Forks](https://img.shields.io/github/forks/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](https://github.com/ioanniskarvelis/Express-EJS-Blog/network/members)
+[![Issues](https://img.shields.io/github/issues/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](https://github.com/ioanniskarvelis/Express-EJS-Blog/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](https://github.com/ioanniskarvelis/Express-EJS-Blog/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](https://github.com/ioanniskarvelis/Express-EJS-Blog/commits)
+[![Top Language](https://img.shields.io/github/languages/top/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](https://github.com/ioanniskarvelis/Express-EJS-Blog)
+[![Repo Size](https://img.shields.io/github/repo-size/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](https://github.com/ioanniskarvelis/Express-EJS-Blog)
+[![Code Size](https://img.shields.io/github/languages/code-size/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](https://github.com/ioanniskarvelis/Express-EJS-Blog)
+[![Contributors](https://img.shields.io/github/contributors/ioanniskarvelis/Express-EJS-Blog?style=flat-square)](https://github.com/ioanniskarvelis/Express-EJS-Blog/graphs/contributors)
+
 Simple blog application built with Express, EJS, and SQLite. Includes author and reader flows, article publishing, comments, likes, and views.
 
 ## Features
