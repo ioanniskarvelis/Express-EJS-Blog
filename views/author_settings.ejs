@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <title> <%= title %> </title>
+        <link rel="stylesheet" href="/main.css" type="text/css">
+    </head>
+    <body class="bg-yellow-100">
+        <nav class="bg-gray-800">
+            <div class="mx-auto max-w-7xl px-2">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <a href="/author/home" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+                                <a href="/author/settings" class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Settings</a>
+                                <a href="/author/logout" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mx-auto max-w-7xl">
+            <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight mt-5">Author Settings</h2>
+            <p>Here you can edit author's blog</p>
+    
+            <form method="POST" action="/author/blog_update">
+                <div>
+                    <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
+              
+                    <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                        <div class="sm:col-span-3">
+                            <label for="author_first" class="block text-sm font-medium leading-6 text-gray-900">Author's first name</label>
+                            <div class="mt-2">
+                                <input id="author_first" type="text" name="author_first" value="<%= author_first %>" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+    
+              
+                      <div class="sm:col-span-3">
+                        <label for="author_last" class="block text-sm font-medium leading-6 text-gray-900">Author's last name</label>
+                        <div class="mt-2">
+                            <input id="author_last" type="text" name="author_last" value="<%= author_last %>" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-12">
+                    <h2 class="text-base font-semibold leading-7 text-gray-900">Blog Information</h2>
+                  
+                    <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                        <div class="sm:col-span-3">
+                            <label for="blogtitle" class="block text-sm font-medium leading-6 text-gray-900">Blog title</label>
+                            <div class="mt-2">
+                                <input id="blogtitle" type="text" name="blogtitle" value="<%= blogtitle %>" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                  
+                        <div class="sm:col-span-3">
+                            <label for="blogsubtitle" class="block text-sm font-medium leading-6 text-gray-900">Blog subtitle</label>
+                            <div class="mt-2">
+                                <input id="blogsubtitle" type="text" name="blogsubtitle" value="<%= blogsubtitle %>" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <span class="inline-flex items-center rounded-md bg-gray-800 px-2 py-1 text-md font-bold text-yellow-100">
+                    <input type="submit" value="Update">
+                </span>
+            
+                <% if (error) { %>
+                    <strong><%= error %></strong>
+                <% } %>
+            </form>
+        </div>
+    </body> 
+</html>
